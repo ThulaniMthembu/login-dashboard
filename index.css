@@ -204,20 +204,19 @@ p a:hover {
 	display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.form-wrapper {
-	
-	max-width: 350px;
-	width: 80%;
-	padding: 15px;
-	margin: 5px;
-	background: rgba(255, 255, 255, 0.5);
-	box-shadow: 0 8px 32px 0 rgba(173, 177, 224, 0.37);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(10px);
-	border-radius: 10px;
-	border: 1px solid rgba(52, 52, 52, 0.18);
-}
+		max-width: 350px;
+		width: 80%;
+		padding: 15px;
+		margin: 5px;
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 8px 32px 0 rgba(173, 177, 224, 0.37);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(10px);
+		border-radius: 10px;
+		border: 1px solid rgba(52, 52, 52, 0.18);
+	}
 
 	h2 {
 		font-size: 1.25rem;
@@ -242,3 +241,4 @@ p a:hover {
 		font-size: 0.9rem;
 	}
 }
+
