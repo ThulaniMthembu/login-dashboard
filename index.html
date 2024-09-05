@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms Toggle Example</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<!-- Loader -->
+		<div id="loader" style="display: none">
+			<div class="spinner">
+				<div class="spinner1"></div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="modal" class="modal hidden">
+			<div class="modal-content">
+				<span id="modal-close" class="modal-close">&times;</span>
+				<p id="modal-message"></p>
+			</div>
+		</div>
+
+		<div id="heading">
+			<h1>
+				<span class="heading-span">U</span>ser<span class="heading-span">H</span
+				>ub
+			</h1>
+		</div>
+
+		<!-- Login form -->
+		<div id="login-wrapper" class="form-wrapper">
+			<h2>Login</h2>
+			<form id="loginForm">
+				<div class="input-group">
+					<label for="loginUsername">Username</label>
+					<input type="text" id="loginUsername" name="username" required />
+				</div>
+				<div class="input-group">
+					<label for="loginPassword">Password</label>
+					<input type="password" id="loginPassword" name="password" required />
+				</div>
+				<button type="submit" class="login-btn">Login</button>
+			</form>
+			<p>
+				Don't have an account?
+				<a class="reg-login-option" href="#" data-target="#registration-wrapper"
+					>Sign up</a
+				>
+			</p>
+		</div>
+
+		<!-- Registration form -->
+		<div id="registration-wrapper" class="form-wrapper hidden">
+			<h2>Sign Up</h2>
+			<form id="registrationForm">
+				<div class="input-group">
+					<label for="regUsername">Username</label>
+					<input type="text" id="regUsername" name="username" required />
+				</div>
+				<div class="input-group">
+					<label for="regEmail">Email</label>
+					<input type="email" id="regEmail" name="email" required />
+				</div>
+				<div class="input-group">
+					<label for="regPassword">Password</label>
+					<input type="password" id="regPassword" name="password" required />
+				</div>
+				<div class="input-group">
+					<label for="regConfirmPassword">Confirm Password</label>
+					<input
+						type="password"
+						id="regConfirmPassword"
+						name="confirm-password"
+						required
+					/>
+				</div>
+				<button type="submit" class="login-btn">Sign Up</button>
+			</form>
+			<p>
+				Already have an account?
+				<a class="reg-login-option" href="#" data-target="#login-wrapper"
+					>Login</a
+				>
+			</p>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

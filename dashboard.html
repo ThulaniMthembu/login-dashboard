@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Dashboard</title>
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+	<body>
+		<div class="dashboard-container">
+			<aside class="sidebar">
+				<h2 id="welcome-title">Welcome</h2>
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Messages</a></li>
+					<li><a href="index.html">Logout</a></li>
+				</ul>
+			</aside>
+			<main class="main-content">
+				<header>
+					<h1>UH</h1>
+					<h2>Dashboard Overview</h2>
+				</header>
+				<section class="cards">
+					<div class="card">
+						<h3>Profile</h3>
+						<p>Manage your personal information and update your details.</p>
+						<a href="#">Go to Profile</a>
+					</div>
+					<div class="card">
+						<h3>Messages</h3>
+						<p>Check your inbox for new notifications and messages.</p>
+						<a href="#">View Messages</a>
+					</div>
+					<div class="card">
+						<h3>Settings</h3>
+						<p>Adjust your account preferences and security settings.</p>
+						<a href="#">Go to Settings</a>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script>
+			// Set the welcome message with the user's username
+			document.addEventListener('DOMContentLoaded', function () {
+				const userData = JSON.parse(localStorage.getItem('user'));
+
+				if (userData) {
+					const welcomeTitle = document.getElementById('welcome-title');
+					welcomeTitle.textContent = `Welcome, ${userData.username}`;
+				}
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
